@@ -7,9 +7,9 @@ const dev=process.env.NODE_ENV !=='production'
 const app=next({dev})
 const handle=app.getRequestHandler()
 const stripe=require('stripe')('sk_test_51NRVqCGvDkQ2uDLvQ1Egb0FNCVfEstBDbj2MSDyvfKF1v3gTHMcOw7umOWEZHgJmb42DFFlF0oAfceplRrp2wqgF00C6Trv5X9')
-const uri='mongodb+srv://turgay_mammadov:Turqay4114.@cluster0.lrzdqbx.mongodb.net/cluster0Database?retryWrites=true&w=majority'
 
-mongoose.connect(uri,{
+
+mongoose.connect(process.env.URI,{
     useNewUrlParser:true,useUnifiedTopology:true
 })
 .then(()=>
