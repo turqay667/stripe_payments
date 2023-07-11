@@ -1,0 +1,50 @@
+
+$white:#fff;
+$white-dark:#ccc;
+$green-light:#4caf50;
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    border-radius: 8px;
+    background-color: $white;
+    border: 1px solid $white-dark;
+    padding: 20px;
+
+}
+.container h2{
+    font-size: 24px;
+    margin-top: 2rem;
+}
+.container h3{
+    font-size:20px;
+    margin-top: 5px;
+}
+.container img{
+    border-radius: 8px;
+    height: auto;
+
+}
+.container p{
+    font-size: 16px;
+    margin-bottom: 20px;
+
+}
+.pay_now{
+    text-align: center;
+   
+}
+.pay_now button{
+font-family: 'Lato',sans-serif;
+padding: 10px 20px;
+color: $white;
+font-size: 15px;
+background-color: $green-light;
+text-transform: capitalize;
+border-radius: 4px;
+border:none;
+cursor: pointer;
+}
